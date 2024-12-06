@@ -1,0 +1,42 @@
+{
+    "_comment": "以下是配置文件说明，实际使用时请删除所有_comment开头的项",
+    "_comment_base_url": "目标网站的基础URL，例如: https://pan.catcat.blog",
+    "base_url": "https://example.com",
+    
+    "api": {
+        "_comment": "API端点配置，通常不需要修改",
+        "list_endpoint": "/api/fs/list",
+        "get_endpoint": "/api/fs/get"
+    },
+    
+    "auth": {
+        "_comment_password": "访问密码，从网站获取",
+        "password": "your-password-here"
+    },
+    
+    "headers": {
+        "_comment": "请求头配置，通常不需要修改，但注意修改Origin和Referer为实际的网站URL",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        "Accept-Encoding": "gzip, deflate",
+        "Content-Type": "application/json",
+        "_comment_origin": "需要修改为实际的网站URL",
+        "Origin": "https://example.com",
+        "_comment_referer": "需要修改为实际的网站URL",
+        "Referer": "https://example.com/",
+        "Sec-Ch-Ua": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+        "Sec-Ch-Ua-Mobile": "?0",
+        "Sec-Ch-Ua-Platform": "\"macOS\"",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "same-origin",
+        "Connection": "keep-alive"
+    },
+    
+    "_comment_base_path": "网站中要下载的基础路径，例如: /OneDrive/xxx",
+    "base_path": "/your/base/path",
+    
+    "_comment_save_dir": "文件保存到本地的目录，例如: /Users/username/Downloads/xxx",
+    "save_dir": "/your/save/directory"
+}
